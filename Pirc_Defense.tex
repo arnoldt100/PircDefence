@@ -1,0 +1,39 @@
+\documentclass[]{book}
+\usepackage{skak}
+\usepackage{xskak}
+
+% Defining the global figure counter.
+\newcounter{figurecnt}
+\setcounter{figurecnt}{1}
+
+% Defining a command to label a figure.
+\newcommand{\lfigure}{
+    \textbf{\thefigurecnt}
+    \addtocounter{figurecnt}{1}
+    \bigskip}
+\xskaknewpgninfo[no]{initialfigure}
+
+% Define ane xskakcomment command
+\renewcommand\xskakcomment[1]{{\itshape #1}}%
+
+%opening
+\title{Notes on Pirc Defense}
+\author{Arnold Tharrington}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+\frontmatter
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+\input{Introduction/introduction.tex}
+
+\backmatter
+
+\end{document}
