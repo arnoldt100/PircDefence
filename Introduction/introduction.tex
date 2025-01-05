@@ -14,9 +14,6 @@ storefen=TPDragonPirc]
 \chessboard[inverse,showmover=true]
 \lfigure
 
-\chessboard[showmover=true]
-\lfigure
-
 The position arises from the Austrian Attack. Black plays
 c5 and cxd4, or White plays dxc5.
 
@@ -34,5 +31,42 @@ storefen=TPBenoniPirc]
 \chessboard[inverse,showmover=true]
 \lfigure
 
-\chessboard[showmover=true]
+
+\section{The Ruy Lopez Pirc}
+\newchessgame[id=TypicalPostionRuyLopezPirc,
+initialfigure=\thefigurecnt,
+moveid=12w,
+setwhite={kg1,qd2,rf1,ra1,nf3,ng3,bd3,be3,
+          pa2,pb2,pc2,pd4,pe4,pf2,pg2,ph3},
+addblack={kg8,qc7,rb8,rf8,nd7,nf6,bc8,bg7,
+          pa7,pb5,pc6,pd6,pe5,pf7,pg6,ph7},
+storefen=TPRuyLopezPirc]
+
+\chessboard[inverse,showmover=true]
+\lfigure
+
+\section{The Philidor Pirc}
+\newchessgame[id=TypicalPostionPhilidorPirc,
+initialfigure=\thefigurecnt,
+moveid=16b,
+setwhite={kg1,qd2,rf1,ra1,nc3,nd4,bf4,bg2,
+          pa4,pb2,pc2,pe4,pf3,pg4},
+addblack={kg8,qd7,rb8,re8,nc5,nf6,bc6,bg7,
+          pa6,pb6,pc7,pd6,pf7,pg6},
+storefen=TPPhilidorPirc]
+
+\chessboard[inverse,showmover=true]
+\lfigure
+
+\section{The Hippopotamus Pirc}
+\newchessgame[id=TypicalPositionHippopotamusPirc,
+initialfigure=\thefigurecnt,
+moveid=16b,
+setwhite={kg1,qd2,rd1,re1,nc3,nf3,bd3,bh2,
+          pa2,pb2,pc2,pd4,pe5,pf2,pg2,ph3},
+addblack={kh7,qd8,ra8,rf8,ne7,nf6,bb7,bg7,
+          pa6,pb5,pc7,pd6,pe6,pf7,pg6,ph6},
+storefen=TPHippopotamusPirc]
+
+\chessboard[inverse,showmover=true]
 \lfigure
