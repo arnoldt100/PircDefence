@@ -1,0 +1,112 @@
+\chapter{Austrian Attack with 5... c5: Early Deviations}
+
+Below are some typical positions found in the Pirc.
+
+\section{Positional Plans}
+
+\newchessgame[id=AustrianAttack1,
+initialfigure=\thefigurecnt]
+\mainline{1.e4 d6 2. d4 Nf6 3.Nc3 g6 4. f4} 
+
+\chessboard[showmover=true]
+\lfigure
+
+This is the defining position for the Austrian Attack. Black plans to 
+challenge White's central pawns with properly prepared 
+c5 or e5. White plans is to move e5 or d5 (advance the central pawns).
+
+The typical resulting positions have the following pawn structures:
+
+\newchessgame[id=PawnStructureIsolani,
+initialfigure=\thefigurecnt,
+moveid=16b,
+setwhite={pa2,pb2,pc2,pe4,pg2,ph2},
+addblack={pa7,pb7,pc7,pf7,pg6,ph7},
+storefen=PSIsolani]
+\chessboard[inverse,showmover=false]
+\lfigure
+
+\newchessgame[id=PawnStructureBenoniPirc,
+initialfigure=\thefigurecnt,
+moveid=16b,
+setwhite={pa2,pb2,pc2,pd5,pe4,pf4,pg2,ph2},
+addblack={pa7,pb7,pc5,pd6,pe7,pf7,pg6,ph7},
+storefen=PSBenoniPirc]
+\chessboard[inverse,showmover=false]
+\lfigure
+
+\newchessgame[id=PawnStructureCentralWedge,
+initialfigure=\thefigurecnt,
+moveid=16b,
+setwhite={pa2,pb2,pc2,pe5,pf4,pg2,ph2},
+addblack={pa7,pb7,pc5,pe7,pf7,pg6,ph7},
+storefen=PSCentralWedge]
+\chessboard[inverse,showmover=false]
+\lfigure
+
+\newchessgame[id=PawnStructureDRam,
+initialfigure=\thefigurecnt,
+moveid=16b,
+setwhite={pa2,pb2,pc2,pd5,pe4,pf4,pg2,ph2},
+addblack={pa7,pb7,pc6,pd6,pe7,pf7,pg6,ph7},
+storefen=PSDRam]
+\chessboard[inverse,showmover=false]
+\lfigure
+
+\section{Early deviations   5.Bd3 Nc6 }
+
+\newchessgame[id=EarlyDeviationI]
+\mainline{1.e4 d6 2. d4 Nf6 3.Nc3 g6 4. f4 Bg7
+5. Bd3 Nc6} 
+\chessboard[inverse,showmover=false]
+\lfigure
+
+\xskakcomment{7.Bd3 Ng4 loses a pawm. 7.d5 Nb4 with Black's idea of
+...c6 with the possibility of ...Nh6 ...Nc7. Note that ...c6 permits Black's
+queen to gain access to the a5-d8 diagonal. ...Qb6 permits ideal access to 
+White's weak f2 square.}
+
+\section{Key Positions}
+
+\newchessgame[id=EarlyDeviation]
+\mainline{1.e4 d6 2. d4 Nf6 3.Nc3 g6 4. f4 Bg7
+          5. Bd3 Nc6 6. Nf3 Bg4} 
+
+\chessboard[inverse,showmover=false]
+\lfigure
+
+\xskakcomment{There are 3 viable options for white. 7. Be3, 7. e5 and 7.d5}
+
+\subsection{7. Be3}
+
+\newchessgame[id=EarlyDeviation,moveid=6b,
+              setfen=\xskakget{nextfen},
+              id=EarlyDeviation1,moveid=7w]
+\mainline{7. Be3}
+
+\chessboard[inverse,showmover=false]
+\lfigure
+
+\xskakcomment{Black now attacks white central pawns with e5}
+
+\mainline{7... e5. 8. dxe5 dxe5 9. }
+
+\subsection{7. e5}
+
+\newchessgame[id=EarlyDeviation,moveid=6b,
+              setfen=\xskakget{nextfen},
+              id=EarlyDeviation2,moveid=7w]
+\mainline{7. e5}
+
+\chessboard[inverse,showmover=false]
+\lfigure
+
+\subsection{7. d5}
+
+\newchessgame[id=EarlyDeviation,moveid=6b,
+              setfen=\xskakget{nextfen},
+              id=EarlyDeviation3,moveid=7w]
+\mainline{7. d5}
+
+\chessboard[inverse,showmover=false]
+\lfigure
