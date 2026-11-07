@@ -1,6 +1,8 @@
-\documentclass[]{book}
+\documentclass[12]{book}
 \usepackage{skak}
 \usepackage{xskak}
+\usepackage{titlesec}
+\xskakset{style=UF}
 
 % Defining the global figure counter.
 \newcounter{figurecnt}
@@ -13,8 +15,19 @@
     \bigskip}
 \xskaknewpgninfo[no]{initialfigure}
 
-% Define ane xskakcomment command
+% Define an xskakcomment command
 \renewcommand\xskakcomment[1]{{\itshape #1}}%
+
+% Def a shortcut for a apostrophe.
+\newcommand{\apos}{\textquotesingle{}}
+
+% Defining the global game counter
+\newcounter{gamecnt}
+\setcounter{gamecnt}{1}
+\newcommand{\lgamecnt}{
+{\large\textbf{\thegamecnt}}
+\addtocounter{gamecnt}{1}
+\bigskip}
 
 %opening
 \title{Notes on Pirc Defense}
@@ -33,7 +46,7 @@
 \mainmatter
 
 \input{Introduction/introduction.tex}
-
+\input{Chapter1/chapter1.tex}
 \backmatter
 
 \end{document}
